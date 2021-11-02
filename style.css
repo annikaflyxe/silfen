@@ -1,0 +1,45 @@
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: #707070;
+  font-size: 16px;
+}
+
+nav {
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0vw;
+  width: 100%;
+  background: #f2efe9;
+}
+
+li {
+  margin: 15px;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+}
+
+nav .logo {
+  float: left;
+  color: white;
+  font-size: 70px;
+  line-height: 70px;
+  padding-left: 5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
