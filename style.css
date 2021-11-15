@@ -5,9 +5,8 @@ nav ul {
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
-  letter-spacing: 2px;
-  color: #707070;
-  font-size: 16px;
+  color: #000000;
+  font-size: 14px;
 }
 
 nav {
@@ -18,28 +17,67 @@ nav {
   padding: 0;
 }
 
-.navbar {
-  position: fixed;
-  top: 0vw;
-  width: 100%;
-  background: #f2efe9;
-}
-
 li {
   margin: 15px;
+  list-style: none;
+  text-decoration: none;
 }
 
 li a:hover {
-    text-decoration: none;
-}
+  text-decoration: none;
 }
 
+li a {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+h3 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 nav .logo {
   float: left;
   color: white;
-  font-size: 70px;
-  line-height: 70px;
   padding-left: 5rem;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.logo {
+  max-height: 70px;
+  max-width: 70px;
+}
+img {
+  max-width: 400px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.smallProduct {
+  grid-column: 1;
+}
+
+.purchaseBox {
+  grid-column: 2;
 }
