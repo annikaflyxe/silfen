@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -6,7 +10,7 @@ nav ul {
   font-weight: 300;
   font-style: normal;
   color: #000000;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 nav {
@@ -15,6 +19,14 @@ nav {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+nav .logo {
+  float: left;
+  font-size: 16px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 15px 15px;
 }
 
 li {
@@ -34,6 +46,7 @@ li a {
 }
 h1 {
   font-family: futura-pt, sans-serif;
+  font-size: 16px;
   font-weight: 300;
   font-style: normal;
 }
@@ -53,7 +66,8 @@ h3 {
 p {
   font-family: futura-pt, sans-serif;
   font-weight: 100;
-  font-size: 13px;
+  font-style: light;
+  font-size: 12px;
 }
 
 .boxed {
@@ -101,4 +115,107 @@ img {
 
 .purchaseBox {
   grid-column: 1;
+}
+#silfen-footer-bottom {
+  margin: 0 0 40px 0;
+  border: none;
+}
+#silfen-footer-bottom-logo-icon {
+  padding: 5px 15px 0 0;
+  border: none;
+}
+#silfen-footer-bottom-text-1 {
+  font-size: 13px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0 0 8px 0;
+  vertical-align: top;
+  border: none;
+}
+#silfen-footer-bottom-text-2 {
+  font-size: 12px !important;
+  font-weight: 400;
+  color: #000000;
+  padding: 0;
+  vertical-align: bottom;
+  border: none;
+}
+#silfen-footer-bottom-text-3 {
+  font-size: 13px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0 0 10px 0;
+  vertical-align: bottom;
+  border: none;
+  text-align: left;
+}
+#silfen-footer-bottom-link {
+  margin: 0 15px 0 0;
+  border-color: transparent;
+}
+#footer .widget_text {
+  color: #000000;
+  font-size: 13px !important;
+}
+#footer .footer-inner {
+  padding: 130px 0 70px 0;
+  border-top: none;
+}
+
+.productlist {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+
+.products a {
+  text-decoration: none;
+  color: black;
+}
+
+.products a:hover {
+  color: blue;
+}
+
+.products .smallProduct {
+  text-align: center;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.products .smallProduct img:hover {
+  opacity: 0.7;
+}
+.image {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5vw;
+}
+.productlist {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+.fadeInLoad {
+  animation: fadeInLoad 0.5s;
+}
+
+@keyframes fadeInLoad {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
