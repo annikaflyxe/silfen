@@ -28,6 +28,11 @@ a {
   cursor: pointer;
 }
 
+.logo:hover {
+  animation-name: bounce2;
+  animation-duration: 0.8s;
+}
+
 .nav_links {
   list-style: none;
   margin-left: 30px;
@@ -91,6 +96,7 @@ p {
   font-weight: 100;
   font-style: light;
   font-size: 12px;
+  color: black;
 }
 
 .boxed {
@@ -115,17 +121,72 @@ p {
   margin-bottom: 4vw;
 }
 
+.smallProduct {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  left: 18px;
+}
+
+.text2 {
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  right: 18px;
+}
+
+.color-dots {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 18px;
+}
+
+.smallProduct:hover .text {
+  display: block;
+  animation-name: smooth;
+  animation-duration: 1s;
+}
+
+.smallProduct:hover .text2 {
+  display: block;
+  animation-name: smooth;
+  animation-duration: 1s;
+}
+
+.smallProduct:hover .color-dots {
+  display: block;
+  animation-name: smooth;
+  animation-duration: 1s;
+}
+
+@keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*
 .smallProduct img:hover {
   animation-name: bounce2;
   animation-duration: 1s;
 }
+*/
 
 @keyframes bounce2 {
   from {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
 }
 
