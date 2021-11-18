@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/uhf7jhs.css" />
 
     <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3e0066bf97.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -27,6 +35,9 @@
         <img class="heart" src="assets/heart.png" alt="heart" />
         <img class="basket" src="assets/basket.png" alt="basket" />
       </div>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
     </header>
     <main>
       <div class="container">
@@ -46,16 +57,54 @@
               and detachable crossbody strap.
             </p>
             <p class="color"></p>
-            <div class="boxed">ADD TO CART</div>
-            <p>DETAILS AND CARE</p>
-            <p>DELIVERY AND RETURNS</p>
+            <div class="boxed"><p>ADD TO CART</p></div>
+            <div class="details"><p>DETAILS AND CARE</p></div>
+            <div class="delivery"><p>DELIVERY AND RETURNS</p></div>
           </section>
         </section>
-        <article class="smallProduct">
-          <img class="image" src="assets/white-bag.jpg" alt="Bag" />
-        </article>
+
+        <div class="tour__gallery">
+          <ul class="picture__slider">
+            <li class="carousel__image">
+              <img
+                src="assets/thora-blue-front.jpeg"
+                alt="Vanilla Carousel Javascript"
+              />
+            </li>
+            <li class="carousel__image">
+              <img
+                src=""
+                data-src="assets/thora-blue-fromside.jpeg"
+                alt="Vanilla Carousel Javascript"
+              />
+            </li>
+            <li class="carousel__image">
+              <img
+                src=""
+                data-src="assets/thora-inaction.jpg"
+                alt="Vanilla Carousel Javascript"
+              />
+            </li>
+
+            <li class="carousel__image">
+              <img
+                src=""
+                data-src="assets/thora-blue-inside.jpeg"
+                alt="Vanilla Carousel Javascript"
+              />
+            </li>
+          </ul>
+          <div class="controls">
+            <button class="btn--prev is-hidden">
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <button class="btn--next">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </main>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
