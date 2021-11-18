@@ -190,6 +190,14 @@ p {
   right: 18px;
 }
 
+.recycle {
+  display: none;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  color: grey;
+}
+
 .smallProduct:hover .text {
   display: block;
   animation-name: smooth;
@@ -203,6 +211,11 @@ p {
 }
 
 .smallProduct:hover .color-dots {
+  display: block;
+  animation-name: smooth;
+  animation-duration: 1s;
+}
+.smallProduct:hover .recycle {
   display: block;
   animation-name: smooth;
   animation-duration: 1s;
@@ -252,11 +265,21 @@ p {
 
 .purchaseBox {
   grid-column: 1;
-  margin-top: 5vw;
+  margin-top: 4vw;
+  margin-left: 3vw;
 }
 
 .info {
   margin-top: 2vw;
+  margin-right: 2vw;
+}
+
+.info p {
+  font-size: 15px;
+}
+
+.purchaseBox h2 {
+  font-size: 25px;
 }
 
 .boxed {
